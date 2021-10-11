@@ -1,19 +1,79 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import $ from "jquery";
+import About from "./About";
 
 class Header extends Component {
   titles = [];
 
   constructor() {
     super();
-    this.state = { checked: false };
+    this.state = { checked: false, resumeData: {}, currentLang: "res_primaryLanguage.json" };
     this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
   }
 
+  // applyPickedLanguage(pickedLanguage) {
+  //   // this.swapCurrentlyActiveLanguage(oppositeLangIconId);
+  //   //document.documentElement.lang = pickedLanguage;
+  //   // var resumePath =
+  //   //   document.documentElement.lang === window.$primaryLanguage
+  //   //     ? `res_primaryLanguage.json`
+  //   //     : `res_secondaryLanguage.json`;    
+  //   this.loadResumeFromPath(this.state.currentLang);
+  // }
+
+  // swapCurrentlyActiveLanguage(oppositeLangIconId) {
+  //   var pickedLangIconId =
+  //     oppositeLangIconId === window.$primaryLanguageIconId
+  //       ? window.$secondaryLanguageIconId
+  //       : window.$primaryLanguageIconId;
+  //   document
+  //     .getElementById(oppositeLangIconId)
+  //     .removeAttribute("filter", "brightness(40%)");
+  //   document
+  //     .getElementById(pickedLangIconId)
+  //     .setAttribute("filter", "brightness(40%)");
+  // }
+
+   switchLang = (lang) => {
+    
+    if(lang === "res_primaryLanguage.json") {
+      return "res_secondaryLanguage.json"
+    } else if(lang === "res_secondaryLanguage.json") {
+      return "res_primaryLanguage.json"
+    }
+  
+  }
+
+
+  loadResumeFromPath(path) {
+    // console.log(path)
+    $.ajax({
+      url: path,
+      dataType: "json",
+      cache: false,
+      success: function (data) {
+        console.log(this.state.resumeData)
+        this.setState({ resumeData: data });
+      }.bind(this),
+      error: function (xhr, status, err) {
+        alert(err);
+      },
+    });
+  }
+
   onThemeSwitchChange(checked) {
-    this.setState({ checked });
+    let newLang = this.switchLang(this.state.currentLang);
+    console.log(newLang)
+   
+    
+    this.setState({currentLang: newLang, checked });
     this.setTheme();
+    this.loadResumeFromPath(
+      this.state.currentLang
+     // window.$secondaryLanguageIconId
+    );
   }
 
   setTheme() {
@@ -22,6 +82,7 @@ class Header extends Component {
     var newTheme =
       body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
+    
   }
 
   render() {
@@ -90,7 +151,16 @@ class Header extends Component {
             </div>
           </div>
         </div>
+        <div>
+        <About
+          resumeBasicInfo={this.state.resumeData.basic_info}
+         
+        />
+
+
+        </div>
       </header>
+      
     );
   }
 }
