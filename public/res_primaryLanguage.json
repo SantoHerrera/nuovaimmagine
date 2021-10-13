@@ -1,9 +1,10 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description_header": "Monday to Saturday from 10:00 A.m. - 7:00 p.m",
+      "description": "Elsy: 801-347-9648 / Abdi: 801-328-4511 ",
+      "address": "1612 West 3500 South Suite C West Valley City, Utah 84119",
       "section_name": {
-        "about": "About me",
+        "about": "Contact Info",
         "projects": "Projects",
         "skills": "Skills",
         "experience": "Experience"
@@ -80,39 +81,18 @@
       }
     ],
     "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
+      
+      {"title": "Haircuts for Men, Women, and Kids!"},
+      {"title": "Hair Coloring"},
+      {"title": "Highlights"},
+      {"title": "Perms"},
+      {"title": "Keratin"},
+      {"title": "Hair Extensions"},
+      {"title": "Updos for All Ocassions"},
+      {"title": "Eyebrows"},
+      {"title": "Facial"},
+      {"title": "Wax"},
+      {"title": "Makeup"},
+      {"title": "And Much More!"}
     ]
   }

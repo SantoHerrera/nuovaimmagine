@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import $ from "jquery";
 import "./App.scss";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -15,6 +15,8 @@ import Switch from "react-switch";
 // import About from "./About";
 
 class App extends Component {
+
+  titles = [];
 
   constructor(props) {
     super();
@@ -56,6 +58,7 @@ class App extends Component {
       this.state.currentLang
       // window.$secondaryLanguageIconId
     );
+    console.log(this.state.sharedData.basic_info.titles, "corrent path?" )
   }
 
   applyPickedLanguage(pickedLanguage, /*oppositeLangIconId*/) {
@@ -83,11 +86,13 @@ class App extends Component {
   // }
 
   componentDidMount() {
+    
     this.loadSharedData();
-    this.applyPickedLanguage(
-      window.$primaryLanguage,
+    this.loadResumeFromPath(
+      this.state.currentLang
       // window.$secondaryLanguageIconId
     );
+    // console.log(this.state.haredData, "shared after")
   }
 
   loadResumeFromPath(path) {
@@ -95,8 +100,7 @@ class App extends Component {
       url: path,
       dataType: "json",
       cache: false,
-      success: function (data) {
-        // console.log("in file", data)
+      success: function (data) {       
         this.setState({ resumeData: data });
       }.bind(this),
       error: function (xhr, status, err) {
@@ -111,6 +115,7 @@ class App extends Component {
       dataType: "json",
       cache: false,
       success: function (data) {
+        
         this.setState({ sharedData: data });
         document.title = `${this.state.sharedData.basic_info.name}`;
       }.bind(this),
@@ -122,10 +127,15 @@ class App extends Component {
 
   render() {
 
-    if (this.props.sharedData) {
-      var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [x.toUpperCase(), 1500]).flat();
+    if (this.state.sharedData.basic_info) {
+      console.log("working?", this.state.sharedData.name)
+      var name = this.state.sharedData.name;
+      //const titles = this.state.sharedData.basic_info.titles
+      this.titles = this.state.sharedData.basic_info.titles.map(x => [x.toUpperCase(), 1500]).flat();
     }
+    // let titles = this.state.sharedData.basic_info.titles
+    // this.state.sharedData.basic_info.titles
+    // var name = this.props.sharedData.name;
 
     const HeaderTitleTypeAnimation = React.memo(() => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
@@ -200,6 +210,11 @@ class App extends Component {
           </div>
         </header>
 
+        <Experience
+          resumeExperience={this.state.resumeData.experience}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+
 
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
@@ -209,15 +224,12 @@ class App extends Component {
           resumeProjects={this.state.resumeData.projects}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        <Skills
+        {/* <Skills
           sharedSkills={this.state.sharedData.skills}
           resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+        /> */}
+        
+        {/* <Footer sharedBasicInfo={this.state.sharedData.basic_info} /> */}
       </div>
     );
   }

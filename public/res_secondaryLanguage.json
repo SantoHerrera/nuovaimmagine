@@ -1,9 +1,9 @@
 {
     "basic_info": {
-      "description_header": "Cześć",
+      "description_header": "Datos de contacto",
       "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
       "section_name": {
-        "about": "O mnie",
+        "about": "Datos de contacto",
         "projects": "Projekty",
         "skills": "Umiejętności",
         "experience": "Doświadczenie"
@@ -80,37 +80,16 @@
       }
     ],
     "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
+      {"title": "Corte de pelo para hombres, mujeres y niños."},
+      {"title": "Tinte de Pelo"},
+      {"title": "Perms"},
+      {"title": "Keratin"},
+      {"title": "Extensiones de Cabello"},
+      {"title": "Updos para todas las ocasiones"},
+      {"title": "Cejar"},
+      {"title": "Facial"},
+      {"title": "Cera"},
+      {"title": "maquillaje"},
+      {"title": "And Much More!"}
     ]
   }
