@@ -58,7 +58,7 @@ class App extends Component {
       this.state.currentLang
       // window.$secondaryLanguageIconId
     );
-    console.log(this.state.sharedData.basic_info.titles, "corrent path?" )
+    console.log(this.state.sharedData.basic_info.titles, "corrent path?")
   }
 
   applyPickedLanguage(pickedLanguage, /*oppositeLangIconId*/) {
@@ -86,7 +86,7 @@ class App extends Component {
   // }
 
   componentDidMount() {
-    
+
     this.loadSharedData();
     this.loadResumeFromPath(
       this.state.currentLang
@@ -100,7 +100,7 @@ class App extends Component {
       url: path,
       dataType: "json",
       cache: false,
-      success: function (data) {       
+      success: function (data) {
         this.setState({ resumeData: data });
       }.bind(this),
       error: function (xhr, status, err) {
@@ -115,7 +115,7 @@ class App extends Component {
       dataType: "json",
       cache: false,
       success: function (data) {
-        
+
         this.setState({ sharedData: data });
         document.title = `${this.state.sharedData.basic_info.name}`;
       }.bind(this),
@@ -128,10 +128,11 @@ class App extends Component {
   render() {
 
     if (this.state.sharedData.basic_info) {
-      console.log("working?", this.state.sharedData.name)
+
       var name = this.state.sharedData.name;
       //const titles = this.state.sharedData.basic_info.titles
-      this.titles = this.state.sharedData.basic_info.titles.map(x => [x.toUpperCase(), 1500]).flat();
+      let path = this.state.currentLang
+      this.titles = this.state.sharedData.basic_info.titles[path].map(x => [x.toUpperCase(), 1500]).flat();
     }
     // let titles = this.state.sharedData.basic_info.titles
     // this.state.sharedData.basic_info.titles
@@ -154,6 +155,7 @@ class App extends Component {
                 <h1 className="mb-0">
                   <Typical steps={[name]} wrapper="p" />
                 </h1>
+
                 <div className="title-container">
                   <HeaderTitleTypeAnimation />
                 </div>
@@ -228,7 +230,7 @@ class App extends Component {
           sharedSkills={this.state.sharedData.skills}
           resumeBasicInfo={this.state.resumeData.basic_info}
         /> */}
-        
+
         {/* <Footer sharedBasicInfo={this.state.sharedData.basic_info} /> */}
       </div>
     );

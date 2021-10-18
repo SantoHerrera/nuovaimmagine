@@ -1,7 +1,11 @@
 {
     "basic_info": {
       "name": "Nuova Immagine",
-      "titles": [ "10% OFF FOR NEW CLIENTS ", "10% DE DESCUENTO PARA NUEVOS CLIENTES"],
+      "titlesv1": [ "10% OFF FOR NEW CLIENTS ", "", "10% DE DESCUENTO PARA NUEVOS CLIENTES"],
+      "titles": {
+        "res_primaryLanguage.json": ["10% OFF FOR NEW CLIENTS ", ""],
+        "res_secondaryLanguage.json": ["10% DE DESCUENTO PARA NUEVOS CLIENTES", ""]
+      },
       "social": [
         {
           "name": "github",
@@ -14,7 +18,7 @@
           "class": "fab fa-instagram"
         }
       ],
-      "image": "myProfile.jpg"
+      "image": "location.png"
     },
     "skills": {
       "icons": [
