@@ -49,7 +49,7 @@ class App extends Component {
 
   onThemeSwitchChange(checked) {
     let newLang = this.switchLang(this.state.currentLang);
-    console.log(newLang)
+    
 
 
     this.setState({ currentLang: newLang, checked });
@@ -58,7 +58,7 @@ class App extends Component {
       this.state.currentLang
       // window.$secondaryLanguageIconId
     );
-    console.log(this.state.sharedData.basic_info.titles, "corrent path?")
+   
   }
 
   applyPickedLanguage(pickedLanguage, /*oppositeLangIconId*/) {
@@ -129,7 +129,7 @@ class App extends Component {
 
     if (this.state.sharedData.basic_info) {
 
-      var name = this.state.sharedData.name;
+      var name = this.state.sharedData.basic_info.name;
       //const titles = this.state.sharedData.basic_info.titles
       let path = this.state.currentLang
       this.titles = this.state.sharedData.basic_info.titles[path].map(x => [x.toUpperCase(), 1500]).flat();
