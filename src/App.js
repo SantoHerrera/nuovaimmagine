@@ -49,7 +49,7 @@ class App extends Component {
 
   onThemeSwitchChange(checked) {
     let newLang = this.switchLang(this.state.currentLang);
-    
+
 
 
     this.setState({ currentLang: newLang, checked });
@@ -58,7 +58,7 @@ class App extends Component {
       this.state.currentLang
       // window.$secondaryLanguageIconId
     );
-   
+
   }
 
   applyPickedLanguage(pickedLanguage, /*oppositeLangIconId*/) {
@@ -158,9 +158,9 @@ class App extends Component {
 
                 <div className="title-container">
                   <HeaderTitleTypeAnimation />
-                  
+
                 </div>
-                
+
                 <Switch
                   checked={this.state.checked}
                   onChange={this.onThemeSwitchChange}
@@ -207,10 +207,7 @@ class App extends Component {
           <div>
             <About
               resumeBasicInfo={this.state.resumeData.basic_info}
-
             />
-
-
           </div>
         </header>
 
