@@ -15,6 +15,50 @@
         "title": "",
         "startDate": "",
         "description": "",
+        "images": [          
+          "images/df1835c0-.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },   
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/cae4f6ad-.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },               
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
         "images": [
           "images/happycust1.png"
         ],
@@ -54,13 +98,13 @@
             "name": ""
           }
         ]
-      },
+      },      
       {
         "title": "",
         "startDate": "",
         "description": "",
-        "images": [
-          "images/happycust3.png"
+        "images": [          
+          "images/4a4e93ba-.jpg"
         ],
         "technologies": [
           {
@@ -76,7 +120,271 @@
             "name": ""
           }
         ]
-      }
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/645391593.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/645395517.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/645395693.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/c3816309-.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },            
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/IMG_8412.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/IMG_9288.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/IMG_9368.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/IMG_9370.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/IMG_9371.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/IMG_9388.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/IMG_9389.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      },      
+      {
+        "title": "",
+        "startDate": "",
+        "description": "",
+        "images": [          
+          "images/IMG_9390.jpg"
+        ],
+        "technologies": [
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      }          
     ],
     "experience": [
       {"title": "Haircuts for Men, Women, and Kids!"},
