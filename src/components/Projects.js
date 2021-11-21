@@ -11,9 +11,7 @@ class Projects extends Component {
   }
 
   render() {
-    let detailsModalShow = (data) => {
-      this.setState({ detailsModalShow: true, deps: data });
-    };
+  
 
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
@@ -26,7 +24,7 @@ class Projects extends Component {
             style={{ cursor: "pointer" }}
           >
             <span className="portfolio-item d-block">
-              <div className="foto" onClick={() => detailsModalShow(projects)}>
+              <div className="foto">
                 <div>
                   <img
                     src={projects.images[0]}
@@ -71,3 +69,8 @@ export default Projects;
 
 //year
 // {/* <span className="project-date">{projects.startDate}</span> */}
+
+
+// let detailsModalShow = (data) => {
+    //   this.setState({ detailsModalShow: true, deps: data });
+    // };
