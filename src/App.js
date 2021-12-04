@@ -38,6 +38,7 @@ class App extends Component {
     }
   }
 
+
   setTheme() {
     var dataThemeAttribute = "data-theme";
     var body = document.body;
@@ -55,7 +56,7 @@ class App extends Component {
     this.setState({ currentLang: newLang, checked });
     this.setTheme();
     this.loadResumeFromPath(
-      this.state.currentLang
+      newLang
       // window.$secondaryLanguageIconId
     );
 
@@ -125,6 +126,8 @@ class App extends Component {
     });
   }
 
+
+
   render() {
 
     if (this.state.sharedData.basic_info) {
@@ -160,6 +163,8 @@ class App extends Component {
                   <HeaderTitleTypeAnimation />
 
                 </div>
+
+
 
                 <Switch
                   checked={this.state.checked}
@@ -200,37 +205,32 @@ class App extends Component {
                     ></span>
                   }
                   id="icon-switch"
+
                 />
               </div>
             </div>
           </div>
-          <div>
-            <About
-              resumeBasicInfo={this.state.resumeData.basic_info}
-            />
-          </div>
         </header>
+
+        <div id="slidertext" className="text-center">
+          <p>English | Spanish</p>
+        </div>
 
         <Experience
           resumeExperience={this.state.resumeData.experience}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
 
-
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
         />
+
         <Projects
           resumeProjects={this.state.resumeData.projects}
           resumeBasicInfo={this.state.resumeData.basic_info}
         />
-        {/* <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        /> */}
 
-        {/* <Footer sharedBasicInfo={this.state.sharedData.basic_info} /> */}
       </div>
     );
   }

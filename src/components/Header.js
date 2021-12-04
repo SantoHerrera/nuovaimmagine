@@ -9,7 +9,11 @@ class Header extends Component {
 
   constructor() {
     super();
-    this.state = { checked: false, resumeData: {}, currentLang: "res_primaryLanguage.json" };
+    this.state = {
+      checked: false,
+      resumeData: {},
+      currentLang: "res_primaryLanguage.json"
+    };
     this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
   }
 
@@ -36,14 +40,15 @@ class Header extends Component {
   //     .setAttribute("filter", "brightness(40%)");
   // }
 
-   switchLang = (lang) => {
-    
-    if(lang === "res_primaryLanguage.json") {
+  switchLang = (lang) => {
+
+    if (lang === "res_primaryLanguage.json") {
       return "res_secondaryLanguage.json"
-    } else if(lang === "res_secondaryLanguage.json") {
+
+    } else if (lang === "res_secondaryLanguage.json") {
       return "res_primaryLanguage.json"
     }
-  
+
   }
 
 
@@ -64,15 +69,16 @@ class Header extends Component {
   }
 
   onThemeSwitchChange(checked) {
+
     let newLang = this.switchLang(this.state.currentLang);
-    console.log(newLang)
-   
-    
-    this.setState({currentLang: newLang, checked });
+    console.log("in heresadfdsd");
+
+    this.setState({ currentLang: newLang, checked });
     this.setTheme();
+
     this.loadResumeFromPath(
       this.state.currentLang
-     // window.$secondaryLanguageIconId
+      // window.$secondaryLanguageIconId
     );
   }
 
@@ -82,32 +88,35 @@ class Header extends Component {
     var newTheme =
       body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
-    
+
   }
 
   render() {
     if (this.props.sharedData) {
-      var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
+      //var name = this.props.sharedData.name;
+      this.titles = this.props.sharedData.titles//.map(x => [x.toUpperCase(), 1500])//.flat();
     }
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
+    const HeaderTitleTypeAnimation = React.memo(() => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
 
     return (
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        <div className="row aligner" style={{height: '100%'}}>
+        <div className="row aligner" style={{ height: '100%' }}>
           <div className="col-md-12">
             <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
-              <br/>
-              <h1 className="mb-0">
-                <Typical steps={[name]} wrapper="p" />
-              </h1>
+              <span className="iconify header-icon" data-icon="fa:cut" data-inline="false"></span>
+              <br />
+
+
               <div className="title-container">
                 <HeaderTitleTypeAnimation />
+
               </div>
+
+
+
               <Switch
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
@@ -148,19 +157,16 @@ class Header extends Component {
                 }
                 id="icon-switch"
               />
+
+              <div><p> Eng | Spa</p></div>
+
             </div>
           </div>
         </div>
-        <div>
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-         
-        />
-
-
-        </div>
       </header>
-      
+
+
+
     );
   }
 }
