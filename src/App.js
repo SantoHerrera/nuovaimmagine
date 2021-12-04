@@ -209,10 +209,19 @@ class App extends Component {
                 />
               </div>
             </div>
+
+            <br/>
+            <br/>
+            <br/>
           </div>
+        
+        
         </header>
+        
+        
 
         <div id="slidertext" className="text-center">
+        
           <p>English | Spanish</p>
         </div>
 
