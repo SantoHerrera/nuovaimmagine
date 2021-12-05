@@ -157,15 +157,19 @@ class App extends Component {
                 <br />
                 <h1 className="mb-0">
                   <Typical steps={[name]} wrapper="p" />
-
+                 
+                  
                 </h1>
-
+                
                 <div className="title-container">
+                   
                   <HeaderTitleTypeAnimation />
-
+                  
+                                 
                 </div>
-
-
+                
+                <div> <br /> </div>                              
+                
 
                 <Switch
                   checked={this.state.checked}
@@ -213,6 +217,7 @@ class App extends Component {
 
 
           </div>
+          
 
 
         </header>
@@ -220,7 +225,7 @@ class App extends Component {
 
 
         <div id="slidertext" className="text-center">
-
+          <div> <br /> </div>   
           <p>English | Spanish</p>
         </div>
 
