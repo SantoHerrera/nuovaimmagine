@@ -157,6 +157,7 @@ class App extends Component {
                 <br />
                 <h1 className="mb-0">
                   <Typical steps={[name]} wrapper="p" />
+
                 </h1>
 
                 <div className="title-container">
@@ -210,18 +211,16 @@ class App extends Component {
               </div>
             </div>
 
-            <br/>
-            <br/>
-            <br/>
+
           </div>
-        
-        
+
+
         </header>
-        
-        
+
+
 
         <div id="slidertext" className="text-center">
-        
+
           <p>English | Spanish</p>
         </div>
 
