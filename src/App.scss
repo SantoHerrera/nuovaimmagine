@@ -431,3 +431,10 @@ footer a:focus {
 	margin-top: 50px;
 	font-size: 22px;
 }
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 5s;
+	animation-name: fade;
+	animation-duration: 1s;
+  }

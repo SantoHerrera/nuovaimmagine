@@ -242,6 +242,7 @@ class App extends Component {
         <Projects
           resumeProjects={this.state.resumeData.projects}
           resumeBasicInfo={this.state.resumeData.basic_info}
+          pics={this.state.sharedData.beforeNAfterPics}
         />
 
       </div>
