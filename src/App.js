@@ -45,13 +45,10 @@ class App extends Component {
     var newTheme =
       body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
-
   }
 
   onThemeSwitchChange(checked) {
     let newLang = this.switchLang(this.state.currentLang);
-
-
 
     this.setState({ currentLang: newLang, checked });
     this.setTheme();
@@ -132,9 +129,13 @@ class App extends Component {
 
     if (this.state.sharedData.basic_info) {
 
-      var name = this.state.sharedData.basic_info.name;
+      //var name = this.state.sharedData.basic_info.name;
+      
       //const titles = this.state.sharedData.basic_info.titles
       let path = this.state.currentLang
+
+      var name = this.state.sharedData.basic_info.name[path]
+
       this.titles = this.state.sharedData.basic_info.titles[path].map(x => [x.toUpperCase(), 1500]).flat();
     }
     // let titles = this.state.sharedData.basic_info.titles
@@ -149,27 +150,27 @@ class App extends Component {
     return (
       <div>
 
-        <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
+        <header id="home" style={{ height: window.innerHeight - 80, display: 'block' }}>
           <div className="row aligner" style={{ height: '100%' }}>
+
             <div className="col-md-12">
               <div>
                 <span className="iconify header-icon" data-icon="fa:cut" data-inline="false"></span>
                 <br />
+
                 <h1 className="mb-0">
                   <Typical steps={[name]} wrapper="p" />
-                 
-                  
                 </h1>
-                
-                <div className="title-container">
-                   
+
+                <div className="title-container" style={{ display: "block" }}>
                   <HeaderTitleTypeAnimation />
-                  
-                                 
                 </div>
-                
-                <div> <br /> </div>                              
-                
+
+
+                <div >
+                  <br />
+                </div>
+
 
                 <Switch
                   checked={this.state.checked}
@@ -210,22 +211,16 @@ class App extends Component {
                     ></span>
                   }
                   id="icon-switch"
-
                 />
               </div>
             </div>
-
-
           </div>
-          
-
-
         </header>
 
 
 
-        <div id="slidertext" className="text-center">
-          <div> <br /> </div>   
+        <div id="slidertext" className="text-center" >
+          <br />
           <p>English | Spanish</p>
         </div>
 

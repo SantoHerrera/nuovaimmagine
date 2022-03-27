@@ -1,7 +1,9 @@
 {
     "basic_info": {
-      "name": "Elsy Mora's Beauty Salon",
-      "titlesv1": [ "10% OFF FOR NEW CLIENTS ", "", "10% DE DESCUENTO PARA NUEVOS CLIENTES"],
+      "name": {
+        "res_primaryLanguage.json": "Elsy Mora's Beauty Salon",
+        "res_secondaryLanguage.json": "Elsy Mora's Salón de Belleza"
+      },
       "titles": {
         "res_primaryLanguage.json": ["10% OFF FOR NEW CLIENTS ",  ""],
         "res_secondaryLanguage.json": ["10% DESCUENTO PARA NUEVOS CLIENTES", ""]
