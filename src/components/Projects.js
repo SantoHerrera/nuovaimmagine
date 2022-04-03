@@ -26,7 +26,7 @@ class Projects extends Component {
 
   render() {
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
-    if (this.props.resumeProjects && this.props.resumeBasicInfo && this.props.beforeNAfterPics) {
+    if (this.props.resumeProjects && this.props.resumeBasicInfo && this.props.pics) {
       var sectionName = this.props.resumeBasicInfo.section_name.projects;
 
 
