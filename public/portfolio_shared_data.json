@@ -1,8 +1,8 @@
 {
     "basic_info": {
       "name": {
-        "res_primaryLanguage.json": "Elsy Mora's Beauty Salon",
-        "res_secondaryLanguage.json": "Elsy Mora's Salón de Belleza"
+        "res_primaryLanguage.json": "Your Local Handyman",
+        "res_secondaryLanguage.json": "Trabajador En Mi Ciudad"
       },
       "titles": {
         "res_primaryLanguage.json": ["10% OFF FOR NEW CLIENTS ",  ""],
@@ -20,7 +20,7 @@
           "class": "fab fa-instagram"
         }
       ],
-      "image": "location.jpg"
+      "image": "profilepicfinal.jpg"
     },
     "beforeNAfterPics": [
       ["images/df1835c0-.jpg", "images/cae4f6ad-.jpg"], ["images/c3816309-.jpg", "images/4a4e93ba-.jpg"], ["images/645391593.jpg", "images/happycust2.png"]

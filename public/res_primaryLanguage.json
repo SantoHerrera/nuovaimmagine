@@ -1,13 +1,14 @@
 {
     "basic_info": {
-      "description_header": "Monday to Saturday from 10:00 A.m. - 7:00 p.m",
-      "description": "Elsy: 801-347-9648 ",
-      "address": "7689 Jordan Landing Blvd #220 West Jordan, Utah 84084 Suite #102",
+      "description_header": "Flexible Hours",
+      "description": "Rafael: 801-205-4323",
+      
+      "address": "Salt Lake City",
       "section_name": {
         "about": "Contact Info",
-        "projects": "Some Before and Afters",
+        "projects": "pics of van | measurements: width -  30 inches height -  25 inches length - 20inches",
         "skills": "Skills",
-        "experience": "What We Offer"
+        "experience": "What We Offer | Per Hour"
       }
     },
     "projects": [
@@ -387,18 +388,12 @@
       }          
     ],
     "experience": [
-      {"title": "Haircuts for Men, Women, and Kids!"},
-      {"title": "Hair Coloring"},
-      {"title": "Highlights"},
-      {"title": "Perms"},
-      {"title": "Keratin"},
-      {"title": "Hair Extensions"},
-      {"title": "Updos for All Ocassions"},
-      {"title": "Eyebrows"},
-      {"title": "Facial"},
-      {"title": "Wax"},
-      {"title": "Makeup"},
-      {"title": "Acrylic Nails and Pedicure Spa"},
-      {"title": "And Much More!"}
+      {"title": "Help Moving | $34.99"},
+      {"title": "Heavy Lifting & Loading | $37.99"},
+      {"title": "Truck Assisted Help Moving | $49.99"},
+      {"title": "Trash & Furniture Removal | $35.99"},
+      {"title": "IT Services & Computer Repair | $30"},
+      {"title": "Website Maker | $35.99"},
+      {"title": "75 Words Per Minute Typing Speed"}
     ]
   }

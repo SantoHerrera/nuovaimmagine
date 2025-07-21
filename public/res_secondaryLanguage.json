@@ -1,13 +1,13 @@
 {
     "basic_info": {
       "description_header": "Lunes a Sábado de 10:00 A.m. - 7:00 p.m",
-      "description": "Elsy: 801-347-9648",
-      "address": "7689 Jordan Landing Blvd #220 West Jordan, Utah 84084 Suite #102",
+      "description": "Rafael: 801-205-4323",
+      "address": "Salt Lake City",
       "section_name": {
         "about": "Datos de contacto",
         "projects": "Algunos antes y después",
         "skills": "Umiejętności",
-        "experience": "Lo Que Ofrecemos"
+        "experience": "Lo Que Ofrecemos | Por Hora"
       }
     },
     "projects": [
@@ -387,17 +387,13 @@
       }          
     ],
     "experience": [
-      {"title": "Corte de pelo para hombres, mujeres y niños."},
-      {"title": "Tinte de Pelo"},
-      {"title": "Perms"},
-      {"title": "Keratin"},
-      {"title": "Extensiones de Cabello"},
-      {"title": "Updos para todas las ocasiones"},
-      {"title": "Cejar"},
-      {"title": "Facial"},
-      {"title": "Cera"},
-      {"title": "Maquillaje"},
-      {"title": "Uñas acrílicas y spa de pedicura"},
-      {"title": "And Much More!"}
+      {"title": "Ayuda con mudanzas | $34.99"},
+      {"title": "Recogida de basura y muebles | $35.99"},
+      {"title": "Levantamiento y carga de objetos pesados | $37.99"},
+      {"title": "Mudanza con asistencia de camión | $49.99"},
+      {"title": "Servicios de TI y reparación de computadoras | $30"},
+      {"title": "Creador de sitios web | $35.99"},
+      {"title": "Velocidad de escritura de 75 palabras por minuto"}
     ]
   }
+
