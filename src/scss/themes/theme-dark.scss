@@ -1,6 +1,8 @@
-body[data-theme="dark"] {  
+body[data-theme="dark"] {
 
-   @import '../src/scss/dark-slider.scss';
+   //   @import '../src/scss/dark-slider.scss';
+   @import '../dark-slider.scss';
+
 
    .slider-tab {
       background-color: #8C8C8C;
@@ -34,6 +36,7 @@ body[data-theme="dark"] {
 
    header {
       background-color: #494949;
+
       h1 {
          color: white;
       }
@@ -41,12 +44,15 @@ body[data-theme="dark"] {
 
    #about {
       background-color: #7f7f7f;
+
       h1 span {
          color: white;
       }
+
       .polaroid span {
-         background:  #6d6d6d;
+         background: #6d6d6d;
       }
+
       .card {
          background: #6d6d6d;
          color: white;
@@ -55,12 +61,15 @@ body[data-theme="dark"] {
 
    #portfolio {
       background: #5b5b5b;
+
       .section-title {
          color: white !important;
       }
+
       .foto div {
          background: #6d6d6d;
       }
+
       .project-title-settings {
          color: white;
       }
@@ -69,6 +78,7 @@ body[data-theme="dark"] {
    #resume {
       filter: brightness(80%);
       background: #5b5b5b;
+
       .section-title {
          color: white !important;
       }
@@ -89,14 +99,15 @@ body[data-theme="dark"] {
       .vertical-timeline-element-icon {
          background: #919191 !important;
       }
-      @media only screen and (max-width: 1169px) { 
+
+      @media only screen and (max-width: 1169px) {
          .vertical-timeline-element-date {
             color: black;
          }
       }
    }
 
-   #slidertext {  
+   #slidertext {
       background-color: #494949;
       padding-bottom: 5%;
    }
